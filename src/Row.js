@@ -19,6 +19,8 @@ function Row({ title, fetchUrl, isLargeRow = false }) {
 
     console.log(movies);
 
+    if(movies){
+
   return (
     <div className="row">
         <h2>{title}</h2>
@@ -35,6 +37,11 @@ function Row({ title, fetchUrl, isLargeRow = false }) {
         ))}
     </div>
   );
+}
+
+return(
+    <p>Loading.....</p>
+)
 }
 
 export default Row;
